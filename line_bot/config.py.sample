@@ -1,0 +1,22 @@
+
+
+url = "https://trialbot-api.line.me//v1/events"
+
+headers = {
+        'Content-Type': 'application/json',
+        "X-Line-ChannelID": "",
+        "X-Line-ChannelSecret": "",
+        "X-Line-Trusted-User-With-ACL": "",
+        }
+
+data = {
+    "to":[],
+    "toChannel":1383378250, # fixed value
+    "eventType":"138311608800106203", # fixed value
+    "content":{
+        "contentType":1,
+        "toType":1,
+        "text": ""
+    }
+}
+
