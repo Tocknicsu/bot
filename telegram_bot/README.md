@@ -1,6 +1,8 @@
 ### Telegram bot
 ---
+
  - Use Telegram App and add BotFather. It will interactive will you.
+
 ```
 You: /newbot
 
@@ -19,6 +21,7 @@ HERE_IS_YOUR_TOKEN
 ```
 
  - Run the following commands:
+
 ```
 apt-get install python3 python3-pip
 pip3 install --upgrade -r requirements.txt
@@ -30,4 +33,5 @@ python3 server
 
 ### How to change Response
 ---
+
  - Change line 14 msg['text'] to what you want.
