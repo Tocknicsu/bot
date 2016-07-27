@@ -1,0 +1,9 @@
+
+url = "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+
+auth = {
+    "grant_type": "client_credentials",
+    "client_id": "",
+    "client_secret": "",
+    "scope": "https://graph.microsoft.com/.default"
+}
