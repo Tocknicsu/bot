@@ -10,7 +10,7 @@ pip3 install --upgrade -r requirements.txt
 
  - [Register](https://dev.botframework.com/bots/new) your Bot.
 
- - Create Microsoft App ID and password. Remember the key.
+ - Create Microsoft App ID and password. Remember the secret.
 
  - Registrer a domain.
 
@@ -23,6 +23,8 @@ pip3 install --upgrade -r requirements.txt
 ```
 cp config.py.sample config.py
 # edit 
+"client_id": "YOUR_APP_ID",
+"client_secret": "YOUR_APP_SECRET",
 
 cp line.conf /etc/nginx/sites-available/
 ln -s /etc/nginx/sites-available/microsoft.conf /etc/nginx/site-enabled/
