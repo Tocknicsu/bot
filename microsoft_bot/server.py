@@ -35,6 +35,9 @@ def shutdown():
 
 class Index(tornado.web.RequestHandler):
     def process(self, message):
+        if message['type'] == 'ping':
+            print("Ping")
+            return
         res = requests.post(config.url, data=config.auth)
         token = json.loads(res.text)['access_token']
         url = "https://%s.botframework.com/v3/conversations/%s/activities/"%(
