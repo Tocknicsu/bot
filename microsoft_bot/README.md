@@ -29,3 +29,10 @@ ln -s /etc/nginx/sites-available/microsoft.conf /etc/nginx/site-enabled/
 service nginx restart
 python3 server.py
 ```
+ - Fill in Messaging endpoint and save. Then, click 'Test' on the dashboard.
+
+ - Enjoy it. 
+
+### How to change Response
+---
+ - Just go to server.py and look at "Index" class, it has a "process" function. Then, change the response to what you want.

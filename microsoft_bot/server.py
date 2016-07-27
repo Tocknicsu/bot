@@ -44,11 +44,12 @@ class Index(tornado.web.RequestHandler):
                 urllib.parse.quote(message['channelId']),
                 urllib.parse.quote(message['conversation']['id'])
             )
+        response = message['text']
         data = { 
                 'type': 'message',
                 'from': message['recipient'],
                 'recipient': message['from'],
-                'text': message['text'], 
+                'text': response 
         }
         headers={
             'Content-Type': 'application/json',
